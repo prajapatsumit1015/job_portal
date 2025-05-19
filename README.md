@@ -1,25 +1,31 @@
-# README
+[![Maintainability](https://api.codeclimate.com/v1/badges/e9c56b1401e0bb6f6705/maintainability)](https://codeclimate.com/repos/5b5f08efe363dc0257008292/maintainability)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e9c56b1401e0bb6f6705/test_coverage)](https://codeclimate.com/repos/5b5f08efe363dc0257008292/test_coverage)
 
-Things you may want to cover:
+# Surventrix Next
+Surventrix and SurveyorsHub merged into one product.
+It is now surventrix 2.0<br>
+A rewrite and major improvement on the current Surventrix system.<br>
 
-* Ruby version
+## Prerequisites
+The setup steps expect following tools installed on the system.
 
-* System dependencies
+* Ruby version `3.1.6`
+* rails version `7.2.2.1`
 
-* Configuration
+* Bundler
 
-* Database creation
+## Setup steps
+  - Clone application from github.
+  - Update database.yml to connect to with Postgresql DB
+  - Run the following commands in terminal
 
-* Database initialization
+  ```bash
+  $ bundle install
+  $ rails db:create 
+  $ rails db:migrate
+  $ rails db:seed
+  $ rails s
+  ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# job_portal
+And now you can visit the site with the URL http://localhost:3000
